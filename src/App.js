@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import News from './News';
+
 function App() {
   return (
     <div>
@@ -21,44 +23,35 @@ function App() {
           </div>
         </nav>
       </header>
-      <div className='row'>
-        <main className="col-8">
-          <article>
-            <h2>
-              Где я?
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim pulvinar ligula at malesuada. Ut vitae tellus ut urna aliquam efficitur. In sit amet mattis dolor. Suspendisse id nulla leo. Vivamus lorem velit, mattis at risus quis, pulvinar efficitur leo. Integer non tortor vitae ipsum luctus dictum. Sed nisi purus, elementum non commodo non, lobortis vel ipsum. In mattis, risus luctus volutpat accumsan, ligula nunc malesuada lorem, quis finibus sem justo quis nisl. Nunc auctor augue id vulputate tempor. Aenean aliquet iaculis quam a fermentum. Nullam nec lorem venenatis, vulputate elit nec, accumsan eros. Ut ultricies ligula euismod dui tincidunt finibus. Pellentesque malesuada mattis auctor. Proin maximus nunc nisi, ut finibus nibh ornare in. In hac habitasse platea dictumst. Sed vehicula in lorem ac eleifend.
-              Ut ut nibh et felis fringilla scelerisque. Praesent pharetra viverra metus quis gravida. Curabitur eget risus magna. Etiam sit amet tellus purus. Quisque dignissim varius maximus. Aliquam imperdiet leo ut nisi rhoncus bibendum. Quisque faucibus erat sed leo sagittis, ut malesuada velit vestibulum.
-              Sed semper non ipsum malesuada ultrices. Vivamus posuere tempor venenatis. Cras scelerisque euismod nulla vitae commodo. Aliquam erat volutpat. Praesent justo ex, feugiat nec viverra eu, pretium nec elit. Nam et mauris vel massa gravida dapibus. Nulla facilisi.
-            </p>
-          </article>
-        </main>
-        <aside className="col-4 news-react">
-          <div className="news-list">
-            <h2>Последние новости</h2>
-            <ul className="list-group">
-              <li className="list-group-item">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Довольно странные стихи Фета про колбасу и снеговиков</h5>
-                    <a href="#" className="btn btn-secondary">Go somewhere</a>
-                  </div>
-                </div>
-              </li>
-              <li className="list-group-item">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">В Москве эвакуировали балкон, на который вышли умирать</h5>
-                    <a href="#" className="btn btn-secondary">Go somewhere</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </aside>
+      <div className='container'>
+        <div className='row'>
+          <main className="col-8">
+            <article>
+              <h2 className="title"><strong>Где я?</strong></h2>
+              <p className="lead">            
+                Это небольшое приложение, где собраны теоретические знания и практические навыки.
+              </p>
+              <p className="lead">
+                В разделе «Биография» собраны основные сведения обо мне и моем опыте.
+              </p>
+              <p className="lead">
+              Раздел «Новости» содержит в себе раздел, посвященный несуществующим новостям, сгенерированным нейронными сетями и дополненные ими же. За генерацию новостей отвечает <mark>Neural Meduza</mark>. Далее эти новости красочно дополняет нейросеть семейства YaLM — <mark>Балабоба</mark>. Если вы ещё не слышали об этом сервисе, обязательно попробуйте!
+              </p>
+              <p className="lead">
+              На страничке «О сайте» представлена исключительно технического рода информация о сайте (точнее, веб-приложении).
+              </p>
+            </article>
+          </main>
+          <aside className="col-4 news-react">
+            <div className="news-list">
+              <h2 className="news-title">Последние новости</h2>
+              <News />
+              </div>
+          </aside>
+        </div>
+        
       </div>
-      <footer className="footer mt-auto py-3 bg-light">
+      <footer className="footer mt-auto py-3 fixed-bottom bg-light">
         <div className="container">
           <span className="text-muted">Place sticky footer content here.</span>
         </div>
