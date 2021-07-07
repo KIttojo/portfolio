@@ -16,7 +16,7 @@ function News() {
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">В Москве эвакуировали балкон, на который вышли умирать</h5>
-<a href="#" className="btn btn-secondary">Читать новость</a>
+            <a href="#" className="btn btn-secondary">Читать новость</a>
           </div>
         </div>
       </li>

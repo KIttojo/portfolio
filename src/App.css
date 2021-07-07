@@ -1,9 +1,27 @@
-.row {
-  margin-top: 1.5rem;
+@media (max-width: 767px) {
+  .col-4 {
+    display: none;
+  }
+  .col-8 {
+    width: 100%;
+  }
 }
 
-.title{
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.row {
+  margin-top: 3.5rem;
+}
+
+.title {
   margin-bottom: 1.8rem !important;
+}
+
+.lead {
+  font-family: CustomSerif, Georgia, Cambria, 'Times New Roman', serif;
+  text-align: justify;
 }
 
 .news-title {
@@ -18,10 +36,16 @@
   border: none;
 }
 
-.lead {
-  font-family: CustomSerif, Georgia, Cambria, 'Times New Roman', serif;
+.card,
+.btn {
+  border-radius: 0.6rem;
 }
 
 .btn {
   margin-top: 0.6rem;
+}
+
+.footer-text,
+.footer-icons {
+  display: inline;
 }
