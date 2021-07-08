@@ -1,17 +1,28 @@
 import React from 'react';
-// import './App.css';
-
-import Header from './Header';
-import Footer from './Footer';
+import './App.css';
 
 function Bio() {
   return (
     <div>
-      <Header />
-      <div className='container'>
-        <p>sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf</p>
+      <div className="container">
+        <div className="row">
+          <h2 className="title"><strong>Обо мне</strong></h2>
+          <article className="lead">
+            <p>
+            Бета-тестировщик ВКонтакте а также участник Экспертов Вконтакте (о последнем мало информации в интернете, так что можете ознакомиться по ссылке https://kod.ru/tematicheskaya-lenta-vkontakte-2020/ )
+            </p>
+            <p>
+            Имею опыт в web тестировании как на мобильных девайсах, так и десктоп. В свободное время повышаю навыки программирования (python, web (html + css + js). Некоторые из моих работ представлены здесь - https://github.com/KIttojo ; также вы можете взглянуть на мой сайт, над которым я сейчас работаю (все, начиная с UX и заканчивая кодом, разработано и спроектировано мной) - https://kittojo.github.io/
+            </p>
+            <p>
+            Пунктуален, аккуратен, ответственный, прямолинейный и внимательный. Коммуникабельный. Есть стремление к развитию. Не боюсь трудностей, ведь, преодолевая их, я повышаю свой скилл.
+            </p>
+            <p>
+              В будущем вижу себя разработчиком, а навыки тестирования помогут мне в работе.
+            </p>
+          </article>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 }

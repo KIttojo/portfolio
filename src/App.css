@@ -49,3 +49,7 @@
 .footer-icons {
   display: inline;
 }
+
+time {
+  color: #666;
+}

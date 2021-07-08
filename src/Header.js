@@ -16,6 +16,10 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
+              {/* <Link className="nav-link active" to="/">Главная</Link>
+              <Link className="nav-link" to="/bio">Биография</Link>
+              <Link className="nav-link" to="/news">Новости</Link>
+              <Link className="nav-link " to="/about">О сайте</Link> */}
               <a className="nav-link active" aria-current="page" href="/">Главная</a>
               <a className="nav-link" href="/bio">Биография</a>
               <a className="nav-link" href="/news">Новости</a>
@@ -23,9 +27,9 @@ function Header() {
             </div>
           </div>
           {/* <Switch>
-            <Route exect path="/" component={App} />
-            <Route exect path="/bio" component={Bio} />
-            <Route exect path="/about" component={About} />
+            <Route path="/"><App /></Route>
+            <Route path="/bio"><Bio /></Route>
+            <Route path="/about"><About /></Route>
           </Switch> */}
         </div>
       </nav>
