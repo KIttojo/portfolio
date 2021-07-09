@@ -8,10 +8,12 @@ import Home from './Home';
 import Bio from './Bio';
 import About from './About';
 
-document.querySelectorAll("nav-link").forEach(item => 
-  item.addEventListener("click", () => item.classList.toggle("active"))
-);
-
+function setAvtiveTab(e) {
+  // const target = e.target;
+  const items = Array.from(document.getElementsByClassName("nav-link"));
+  items.forEach(item => {item.classList.remove("active")})
+  e.target.classList.add("active");
+}
 
 function App() {
   return (
@@ -25,10 +27,10 @@ function App() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <Link className="nav-link" to="/">Главная</Link>
-                <Link className="nav-link" to="/bio">Биография</Link>
-                <Link className="nav-link" to="/news">Новости</Link>
-                <Link className="nav-link" to="/about">О сайте</Link>
+                <Link className="nav-link" to="/" onClick={setAvtiveTab}>Главная</Link>
+                <Link className="nav-link" to="/bio" onClick={setAvtiveTab}>Биография</Link>
+                <Link className="nav-link" to="/news" onClick={setAvtiveTab}>Новости</Link>
+                <Link className="nav-link" to="/about" onClick={setAvtiveTab}>О сайте</Link>
               </div>
             </div>.
           </div>

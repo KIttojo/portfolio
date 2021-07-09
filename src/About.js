@@ -9,17 +9,30 @@ function About() {
           <h2 className="title"><strong>Об этом сайте</strong></h2>
           <article className="lead">
             <p>
-            Бета-тестировщик ВКонтакте а также участник Экспертов Вконтакте (о последнем мало информации в интернете, так что можете ознакомиться по ссылке https://kod.ru/tematicheskaya-lenta-vkontakte-2020/ )
+            В данном разделе собрана информация исключительно технического характера.
             </p>
-            <p>
-            Имею опыт в web тестировании как на мобильных девайсах, так и десктоп. В свободное время повышаю навыки программирования (python, web (html + css + js). Некоторые из моих работ представлены здесь - https://github.com/KIttojo ; также вы можете взглянуть на мой сайт, над которым я сейчас работаю (все, начиная с UX и заканчивая кодом, разработано и спроектировано мной) - https://kittojo.github.io/
-            </p>
-            <p>
-            Пунктуален, аккуратен, ответственный, прямолинейный и внимательный. Коммуникабельный. Есть стремление к развитию. Не боюсь трудностей, ведь, преодолевая их, я повышаю свой скилл.
-            </p>
-            <p>
-              В будущем вижу себя разработчиком, а навыки тестирования помогут мне в работе.
-            </p>
+            <dl className="row">
+              <dt className="col-sm-3 listRow">Front-end инструменты</dt>
+              <dd className="col-sm-9">HTML 5, CSS, JS + ReactJS.</dd>
+
+              <dt className="col-sm-3 listRow">Back-end</dt>
+              <dd className="col-sm-9">Для запуска локально используется NodeJS. Хостинг не предусмотрен.</dd>
+
+              <dt className="col-sm-3 listRow">Дополнительные инструменты</dt>
+              <dd className="col-sm-9">
+                <dl className="row">
+                  <dt className="col-sm-4">API</dt>
+                  <dd className="col-sm-8">
+                    <p>VK API</p>
+                  </dd>
+                  <dt className="col-sm-4">Сервисы</dt>
+                  <dd className="col-sm-8">
+                    <p>Neural Meduza</p>
+                    <p>Балабоба</p>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
           </article>
         </div>
       </div>

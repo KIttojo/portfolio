@@ -1,5 +1,3 @@
-import './App.css';
-
 import News from './News';
 
 function Home() {
@@ -27,11 +25,10 @@ function Home() {
           <div className="news-list">
             <h2 className="news-title">Последние новости</h2>
             <News />
-            </div>
+          </div>
         </aside>
       </div>
     </div>
-      
   );
 }
 

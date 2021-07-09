@@ -7,6 +7,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .col-sm-9 .row {
+    margin-top: 0.5rem;
+  }
+}
+
 .nav-link {
   font-size: 1.2rem;
 }
@@ -41,6 +47,10 @@
   border-radius: 0.6rem;
 }
 
+.fullText {
+  border: none;
+}
+
 .btn {
   margin-top: 0.6rem;
 }
@@ -48,6 +58,10 @@
 .footer-text,
 .footer-icons {
   display: inline;
+}
+
+.listRow {
+  padding-bottom: 1.2rem;
 }
 
 time {
