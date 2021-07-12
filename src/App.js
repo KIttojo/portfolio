@@ -9,13 +9,22 @@ import Bio from './Bio';
 import About from './About';
 
 function setAvtiveTab(e) {
-  // const target = e.target;
   const items = Array.from(document.getElementsByClassName("nav-link"));
   items.forEach(item => {item.classList.remove("active")})
   e.target.classList.add("active");
 }
 
 function App() {
+  let state = []
+
+  function componentDidMount(state) {
+    fetch('/users')
+      .then(res => res.json())
+      .then(str => console.log(str));
+  };
+
+  componentDidMount(state)
+
   return (
     <div>
       <Router>

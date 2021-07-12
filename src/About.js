@@ -13,7 +13,7 @@ function About() {
             </p>
             <dl className="row">
               <dt className="col-sm-3 listRow">Front-end инструменты</dt>
-              <dd className="col-sm-9">HTML 5, CSS, JS + ReactJS.</dd>
+              <dd className="col-sm-9">HTML 5, CSS, Bootstrap 5, JS + ReactJS.</dd>
 
               <dt className="col-sm-3 listRow">Back-end</dt>
               <dd className="col-sm-9">Для запуска локально используется NodeJS. Хостинг не предусмотрен.</dd>
