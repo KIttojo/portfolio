@@ -1,4 +1,5 @@
 function NewsComp() {
+  console.log("Дела обстоят так: на 12.07 Балабоба от Яндекса блокирует запросы (403 ошибка), Порфирьевич не работает (503 ошибка), как и пара его аналогов. Жаль.")
   return (
     <div className='container'>
       <div className='row'>
