@@ -34,6 +34,7 @@ function getNews() {
           const post = {
             date: postDate,
             text: items[i].text,
+            id: items[i].id
           };
           posts.push(post);
         }

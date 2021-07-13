@@ -35,10 +35,6 @@
   text-align: center;
 }
 
-.card-body {
-  min-height: 8rem;
-}
-
 .list-group-item {
   border: none;
 }

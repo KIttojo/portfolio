@@ -1,6 +1,6 @@
 import News from './News';
 
-function Home() {
+function Home(props) {
   return (
     <div className='container'>
       <div className='row'>
@@ -24,7 +24,7 @@ function Home() {
         <aside className="col-4 news-react">
           <div className="news-list">
             <h2 className="news-title">Последние новости</h2>
-            <News />
+            <News news={props.news}/>
           </div>
         </aside>
       </div>
