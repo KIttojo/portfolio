@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('/users')
+    fetch('/posts')
       .then(res => res.json())
       .then(str => this.setState({
         news: str
@@ -35,22 +35,22 @@ class App extends React.Component {
       <div>
         <Router>
           <header className="d-flex justify-content-center sticky-top bg-dark">
-          <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-            <div className="container-fluid">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                  <Link className="nav-link" to="/" onClick={setAvtiveTab}>Главная</Link>
-                  <Link className="nav-link" to="/bio" onClick={setAvtiveTab}>Биография</Link>
-                  <Link className="nav-link" to="/news" onClick={setAvtiveTab}>Новости</Link>
-                  <Link className="nav-link" to="/about" onClick={setAvtiveTab}>О сайте</Link>
-                </div>
-              </div>.
-            </div>
-          </nav>
-        </header>
+            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+              <div className="container-fluid">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div className="navbar-nav">
+                    <Link className="nav-link" to="/" onClick={setAvtiveTab}>Главная</Link>
+                    <Link className="nav-link" to="/bio" onClick={setAvtiveTab}>Биография</Link>
+                    <Link className="nav-link" to="/news" onClick={setAvtiveTab}>Новости</Link>
+                    <Link className="nav-link" to="/about" onClick={setAvtiveTab}>О сайте</Link>
+                  </div>
+                </div>.
+              </div>
+            </nav>
+          </header>
 
         <Switch>
           <Route path="/bio" component={Bio}></Route>
